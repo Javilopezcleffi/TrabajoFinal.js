@@ -1,0 +1,125 @@
+:root {
+  --clr-main: #5bc0de;
+  --clr-main-light: #23db63;
+  --clr-white: #ececec;
+  --clr-gray: #e2e2e2;
+  --clr-blue: #3291ae;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nuevoMarco {
+  border: solid rgb(244, 183, 91);
+  border-width: 0.5rem ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.calculadora {
+  background: linear-gradient(var(--clr-white), white);
+}
+
+aside {
+  background: linear-gradient(rgb(181, 181, 181), rgb(206, 206, 206), white);
+  position: sticky;
+  top: 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  color: white;
+  font-size: 1rem;
+}
+
+.title {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.boton-menu {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.boton-menu.active {
+  background-color: white;
+  color: var(--clr-main);
+  position: relative;
+  border-top-right-radius: 4px;
+}
+
+.boton-menu.active::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  bottom: 100%;
+  right: 0;
+  background-color: transparent;
+}
+
+.boton-menu.active::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  top: 100%;
+  right: 0;
+  background-color: transparent;
+}
+
+/* carrito */
+
+.carrito.producto .calculadora {
+  border-top-left-radius: 1rem;
+}
+
+.disabled {
+  display: none;
+}
+
+
+.carrito-producto {
+background: linear-gradient(white, white, white, rgb(231, 231, 231)) ;
+
+}

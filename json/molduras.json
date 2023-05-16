@@ -1,0 +1,6 @@
+[
+    { "nombre": "chica", "precio": 190, "codigo": "30", "id": 1 },
+    { "nombre": "mediana", "precio": 230, "codigo": "30G", "id": 2 },
+    { "nombre": "caja", "precio": 230, "codigo": "230", "id": 3 },
+    { "nombre": "grande", "precio": 440, "codigo": "270", "id": 4}
+  ]
